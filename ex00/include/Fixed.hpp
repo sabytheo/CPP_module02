@@ -5,26 +5,19 @@
 
 class Fixed
 {
-private:
-	int					_rawBits;
-	static const int	_fractionalBits = 8;
+	private:
+		int					_rawBits;
+		static const int	_fractionalBits = 8;
 
-public:
-	// Constructeur par défaut
-	Fixed(void);
+	public:
 
-	// Constructeur de recopie
-	Fixed(const Fixed& other);
+		Fixed(void);
+		Fixed(const Fixed& other);
+		Fixed& operator=(const Fixed& other);
+		~Fixed(void);
 
-	// Surcharge de l'opérateur d'affectation
-	Fixed& operator=(const Fixed& other);
-
-	// Destructeur
-	~Fixed(void);
-
-	// Fonctions membres
-	int getRawBits(void) const;
-	void setRawBits(int const raw);
+		int getRawBits(void) const;
+		void setRawBits(int const raw);
 };
 
 #endif
