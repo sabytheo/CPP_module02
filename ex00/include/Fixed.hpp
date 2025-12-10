@@ -12,7 +12,7 @@ class Fixed
 	public:
 
 		Fixed(void);
-		Fixed(const Fixed& other);
+		Fixed(const Fixed& copy);
 		Fixed& operator=(const Fixed& other);
 		~Fixed(void);
 
