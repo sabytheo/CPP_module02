@@ -9,13 +9,16 @@ int main(void)
 	Fixed const d(Fixed(5.05f) - Fixed(2));
 	Fixed const e(Fixed(5.05f) / Fixed(2));
 
+	std::cout << "---------|result|--------"  << std::endl;
 	std::cout << a << std::endl;
 	std::cout << ++a << std::endl;
 	std::cout << a << std::endl;
 	std::cout << a++ << std::endl;
 	std::cout << a << std::endl;
 	std::cout << b << std::endl;
+	std::cout << "---------|max,min|--------"  << std::endl;
 	std::cout << Fixed::max(a, b) << std::endl;
+	std::cout << Fixed::min(a, b) << std::endl;
 	std::cout << "---------|+,-,/|--------"  << std::endl;
 	std::cout << c << std::endl;
 	std::cout << d << std::endl;
